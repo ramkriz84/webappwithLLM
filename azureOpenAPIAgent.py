@@ -47,14 +47,22 @@ def query_agent(agent, query):
     Returns:
         The response from the agent as a string.
     """
-    prompt = (
+     prompt = (
         """
+         If it is just asking a question that requires neither, reply as follows:
+            {"answer": "answer"}
+            Example:
+            {"answer": "The title with the highest rating is 'Gilead'"}
+            Return all output as a string.
 
-        Below is the query.
+            All strings in "columns" list and data list, should be in double quotes,
+            Lets think step by step.
+            Below is the query.
             Query:
-            """
+        """
         + query
     )
+
     response = agent.run(prompt)
     print(response)
     return response.__str__()
