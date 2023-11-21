@@ -1,6 +1,6 @@
 # 📦 Streamlit App Starter Kit 
 ```
-⬆️ (Replace above with your app's name)
+⬆️ Small webapp to read from CSV file using OpenAPI
 ```
 
 Description of the app ...
