@@ -47,7 +47,7 @@ def query_agent(agent, query):
     Returns:
         The response from the agent as a string.
     """
-     prompt = (
+    prompt = (
         """
          If it is just asking a question that requires neither, reply as follows:
             {"answer": "answer"}
